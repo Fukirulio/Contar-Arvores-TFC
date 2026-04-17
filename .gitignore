@@ -1,0 +1,38 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Pesos dos modelos (ficheiros grandes)
+*.pt
+*.pth
+
+# Resultados gerados automaticamente
+runs/
+results/
+results_deepforest/
+dataset/preview/
+
+# Dados de treino (imagens e máscaras pesadas)
+oam/
+dataset/images/
+dataset/labels/
+data/
+
+# Ficheiros do sistema
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente
+.env
+
+# PDFs
+*.pdf
+
+# VS Code
+.vscode/

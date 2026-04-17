@@ -1,0 +1,7 @@
+streamlit
+ultralytics
+deepforest-pytorch
+opencv-python
+numpy
+Pillow
+rasterio

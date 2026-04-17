@@ -1,0 +1,12 @@
+from ultralytics import YOLO
+
+model = YOLO("yolov8n.pt")
+
+model.train(
+    data="data.yaml",
+    epochs=5,        
+    imgsz=640,        
+    batch=8,
+    device=0,
+    name="tree_detection"
+)
