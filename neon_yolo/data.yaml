@@ -1,0 +1,5 @@
+train: C:/Users/victo/Desktop/TFC Real/neon_yolo/images/train
+val: C:/Users/victo/Desktop/TFC Real/neon_yolo/images/val
+
+nc: 1
+names: ["tree"]

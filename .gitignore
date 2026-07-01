@@ -1,38 +1,60 @@
-# Ambiente virtual
+# Ambientes virtuais e Python
 .venv/
 venv/
 env/
-
-# Python
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
-# Pesos dos modelos (ficheiros grandes)
+# Pesos de modelos (ficheiros grandes)
 *.pt
 *.pth
+*.ckpt
+# models/deepforest_neon_finetuned.pt pesa 245 MB — acima do limite do GitHub (100 MB)
+# Ver models/README.md para instruções de obtenção/re-treino
+models/
 
-# Resultados gerados automaticamente
-runs/
-results/
-results_deepforest/
-dataset/preview/
-
-# Dados de treino (imagens e máscaras pesadas)
+# Dados de treino (imagens pesadas — não cabem no repositório)
 oam/
-dataset/images/
-dataset/labels/
+dataset/
 data/
+evaluation/RGB/
+neon_yolo/images/
 
-# Ficheiros do sistema
+# Outputs do YOLO (gerados automaticamente durante o treino)
+runs/
+results/weights/
+results_deepforest/
+
+# Cache binário gerado pelo YOLO durante o treino
+*.cache
+
+# Ficheiros do sistema operativo
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Variáveis de ambiente
-.env
+# IDEs e editores
+.vscode/
+.idea/
+.vs/
+*.swp
 
-# PDFs
+# Ficheiros temporários e logs
+*.log
+*.tmp
+*.env
+
+# Documentos Word (relatório e rascunhos)
+*.docx
+~$*
+
+# Logs de treino do PyTorch Lightning (gerados automaticamente)
+lightning_logs/
+
+# Relatório (PDF não pertence ao repositório de código)
 *.pdf
 
-# VS Code
-.vscode/
+# Zips do dataset
+*.zip

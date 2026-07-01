@@ -32,5 +32,3 @@ for file in files:
     cv2.imwrite(out_path, image)
 
     print(f"Preview gerado: {file}")
-
-print("\nAbre a pasta dataset/preview para ver os resultados")
